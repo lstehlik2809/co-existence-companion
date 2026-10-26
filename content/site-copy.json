@@ -92,7 +92,7 @@
   },
   "experiment": {
     "instruction": "Choose one change small enough to try in your normal work.",
-    "template": "When {when}, I will {do} instead of {insteadOf}.",
+    "template": "When {when}, I will {do} rather than {insteadOf}.",
     "successSignal": "I’ll know it worked if…",
     "oneAtATime": "You already have an experiment in progress. Check in on it before starting another.",
     "bookPrompt": "The book goes further into the evidence and trade-offs behind these choices. Continue reading alongside your experiment."
