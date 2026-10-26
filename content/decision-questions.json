@@ -1,0 +1,392 @@
+[
+  {
+    "id": "permission-and-data",
+    "question": "Can I use this example in the AI tool I intend to test?",
+    "help": "Check the permissions and data rules that apply to your actual tool. A fictional or approved example may let you test without sharing restricted information.",
+    "appliesTo": [
+      "before-test"
+    ],
+    "answerType": "choice-with-note",
+    "recordFields": [
+      "permissionNote"
+    ],
+    "conceptIds": [
+      "context-engineering"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "medium",
+    "options": [
+      {
+        "id": "yes",
+        "text": "Yes"
+      },
+      {
+        "id": "adapt",
+        "text": "I need a safer example"
+      },
+      {
+        "id": "unknown",
+        "text": "I need to check"
+      }
+    ],
+    "routingGuidance": "If permission is unclear, keep the live task untested and prepare an approved example first."
+  },
+  {
+    "id": "observed-performance",
+    "question": "What happened when I actually tried this task?",
+    "help": "Record a result from an attempt, with the tool or model, date and enough detail to understand what was tried. An expectation is not a test result.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "latest-test",
+    "recordFields": [
+      "tests"
+    ],
+    "conceptIds": [
+      "jagged-frontier",
+      "calibrated-trust"
+    ],
+    "source": {
+      "chapter": "1",
+      "section": "Jaggedness",
+      "anchor": "epub-90434b69bcfe20f3"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "routingGuidance": "A missing attempt stays untested. Do not infer success from confidence or a similar task."
+  },
+  {
+    "id": "quality-and-repair",
+    "question": "What was usable, and what had to be corrected?",
+    "help": "Separate the quality of the first output from the effort needed to reach an acceptable result. Note failures as well as successes.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "qualityNote",
+      "repairNote"
+    ],
+    "conceptIds": [
+      "delegation-calculus",
+      "plausible-output"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "consequences-of-error",
+    "question": "What would happen if an important part were wrong?",
+    "help": "Name the consequence and how you would notice it. Higher stakes call for stronger evidence and evaluation, rather than an automatic assumption that either humans or AI are always safer.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "errorConsequence",
+      "detectabilityNote"
+    ],
+    "conceptIds": [
+      "plausible-output",
+      "calibrated-trust"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "available-alternative",
+    "question": "What would I realistically do without AI help?",
+    "help": "Compare with the help, time and expertise you can actually obtain. The relevant alternative might be an expert, doing it yourself, delay or getting no assistance.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "alternativeNote"
+    ],
+    "conceptIds": [
+      "useful-patterns",
+      "calibrated-trust"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When to Use AI",
+      "anchor": "epub-25cc1c992663dc4a",
+      "lineStart": 1461,
+      "lineEnd": 1478
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "verification-method",
+    "question": "How will I tell whether the result is good enough?",
+    "help": "Identify a source, observable test or person with the expertise to judge the important parts. An agent’s own assurance is not that check.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "verificationMethod",
+      "reviewerNote"
+    ],
+    "conceptIds": [
+      "testable-feedback",
+      "human-advantages",
+      "plausible-output"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You’re the Expert and Can Judge Fast",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "routingGuidance": "If you cannot evaluate the important parts, find appropriate help, narrow the task or remain undecided."
+  },
+  {
+    "id": "capability-to-retain",
+    "question": "What skill or judgment do I want to keep developing here?",
+    "help": "Completion and learning can require different ways of using AI. Name any part you want to attempt, explain or practice yourself.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "capabilityToRetain",
+      "practicePlan"
+    ],
+    "conceptIds": [
+      "effortful-learning",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "meaning-and-voice",
+    "question": "Does my own thinking, voice or involvement carry part of the value?",
+    "help": "Consider the purpose and the relationship. A boundary can cover one part of a task and can change later; it is not a claim of permanent human superiority.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "personalContribution",
+      "keepReason"
+    ],
+    "conceptIds": [
+      "meaningful-process"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "working-mode",
+    "question": "Where do I need to stay involved while the work happens?",
+    "help": "Separate a clear division of labor from close collaboration and agent execution. One task can use different modes for different parts.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "choice-with-note",
+    "recordFields": [
+      "workingMode",
+      "humanPart"
+    ],
+    "conceptIds": [
+      "collaboration-modes"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "options": [
+      {
+        "id": "centaur",
+        "text": "Use clear handoffs"
+      },
+      {
+        "id": "cyborg",
+        "text": "Work back and forth"
+      },
+      {
+        "id": "conjurer",
+        "text": "Delegate execution"
+      },
+      {
+        "id": "unsure",
+        "text": "I need more evidence"
+      }
+    ]
+  },
+  {
+    "id": "agent-assignment",
+    "question": "What result and constraints would I give an agent?",
+    "help": "Write the goal, necessary context, allowed changes, required outputs and evidence of completion. Keep requirements concrete enough to evaluate.",
+    "appliesTo": [
+      "delegate-agent"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "delegationSpec",
+      "completionChecks"
+    ],
+    "conceptIds": [
+      "context-engineering",
+      "collaboration-modes"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "agent-checkpoints",
+    "question": "Which actions need my review, and what must the agent leave to me?",
+    "help": "Set boundaries and any necessary checkpoints around consequences you cannot cheaply undo. Continuous supervision is not required for every delegated task.",
+    "appliesTo": [
+      "delegate-agent"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "authorityLimits",
+      "checkpoints",
+      "reviewPlan"
+    ],
+    "conceptIds": [
+      "collaboration-modes",
+      "testable-feedback"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "medium",
+    "routingGuidance": "These fields operationalize the brief’s oversight requirement; they are not a fourth working mode attributed to the book."
+  },
+  {
+    "id": "total-effort",
+    "question": "Does delegation still help after instructions, review and rework?",
+    "help": "Use what you observed rather than counting generation speed alone. Include failed attempts and whether you would prefer to do the task yourself.",
+    "appliesTo": [
+      "use-ai",
+      "delegate-agent"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "effortComparison"
+    ],
+    "conceptIds": [
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "workflow-effect",
+    "question": "Who or what depends on this output next?",
+    "help": "Check whether faster or more numerous outputs will improve the final outcome or create another queue. You may need to coordinate beyond your own task.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "downstreamEffect"
+    ],
+    "conceptIds": [
+      "workflow-bottlenecks"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "O-Rings, Garbage Cans, and Dissolving Walls",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "control-and-workload",
+    "question": "Will this arrangement leave me able to choose priorities and stop?",
+    "help": "Consider the review workload, the pace of work and who benefits. A technically effective arrangement can still need a different boundary.",
+    "appliesTo": [
+      "use-ai",
+      "delegate-agent"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "workloadBoundary"
+    ],
+    "conceptIds": [
+      "worker-agency"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "reconsideration-trigger",
+    "question": "What new evidence would make me revisit this choice?",
+    "help": "A changed model, different stakes, new learning goals or a failure can matter before a scheduled reminder. Treat a decision as revisable.",
+    "appliesTo": [
+      "all-decisions"
+    ],
+    "answerType": "text",
+    "recordFields": [
+      "reconsiderationTrigger"
+    ],
+    "conceptIds": [
+      "jagged-frontier",
+      "calibrated-trust",
+      "meaningful-process"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  }
+]

@@ -1,0 +1,16 @@
+# Private reference material: never publish or commit.
+/book/
+/source/
+*.epub
+
+# Reviewer-only chapter index and extraction audit; exclude from the public site.
+/content/extraction-report.md
+/review/
+
+# Local tooling output.
+__pycache__/
+*.pyc
+/dist/
+/node_modules/
+/BRIEF.md
+/content/curator-note.md

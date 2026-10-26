@@ -1,0 +1,130 @@
+[
+  {
+    "id": "analyst",
+    "role": "Analyst",
+    "tasks": [
+      "Check recurring data imports",
+      "Explain a result to a stakeholder",
+      "Investigate an unusual pattern"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "manager",
+    "role": "Manager",
+    "tasks": [
+      "Prepare for a team discussion",
+      "Choose priorities for next week",
+      "Coach a colleague through a decision"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "teacher",
+    "role": "Teacher",
+    "tasks": [
+      "Adapt a practice activity",
+      "Diagnose a common misunderstanding",
+      "Plan a lesson discussion"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "designer",
+    "role": "Designer",
+    "tasks": [
+      "Explore alternative concepts",
+      "Check a design against constraints",
+      "Explain a design choice"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "hr",
+    "role": "HR partner",
+    "tasks": [
+      "Clarify an employee-facing message",
+      "Review a role description",
+      "Prepare questions for a development conversation"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "engineer",
+    "role": "Engineer",
+    "tasks": [
+      "Investigate a recurring defect",
+      "Build a small internal tool",
+      "Review a proposed implementation"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "operations",
+    "role": "Operations specialist",
+    "tasks": [
+      "Prepare a service handoff",
+      "Find delays in a recurring process",
+      "Convert notes into an operating checklist"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  },
+  {
+    "id": "writer",
+    "role": "Writer",
+    "tasks": [
+      "Organize source notes",
+      "Develop an argument",
+      "Revise a draft for a different audience"
+    ],
+    "origin": "site",
+    "confidence": "medium",
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    }
+  }
+]

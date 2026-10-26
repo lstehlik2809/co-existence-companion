@@ -1,0 +1,67 @@
+{
+  "id": "big-picture",
+  "title": "Working with capability that does not stand still",
+  "summary": "AI can exceed people on some tasks while failing on others, and those boundaries keep changing. Mollick argues for learning through use, choosing how to collaborate or delegate, and evaluating the results. Completion is only one goal: learning, judgment, voice and relationships can justify a different arrangement. Deep knowledge, breadth, taste and agency help people direct these systems. At work and in society, benefits depend on incentives, institutions and choices about power as much as on better models. The book considers wider opportunities and dangers without claiming certainty about jobs, consciousness or the path to more general intelligence.",
+  "themes": [
+    {
+      "id": "find-the-frontier",
+      "title": "Find where AI helps",
+      "description": "Replace general impressions with evidence from your own tasks."
+    },
+    {
+      "id": "direct-and-check",
+      "title": "Direct the work and check it",
+      "description": "Give useful context, choose a working mode, and make evaluation practical."
+    },
+    {
+      "id": "keep-your-capabilities",
+      "title": "Keep developing your capabilities",
+      "description": "Protect learning, meaning and the human contributions you want to make."
+    },
+    {
+      "id": "change-work",
+      "title": "Change how work and learning happen",
+      "description": "Look beyond individual speed to workflows, incentives and future expertise."
+    },
+    {
+      "id": "wider-effects",
+      "title": "Understand the wider effects",
+      "description": "Consider influence, trust, relationships, power and uncertain futures."
+    }
+  ],
+  "source": {
+    "chapter": "1",
+    "section": "Co-Existence on the Jagged Frontier",
+    "anchor": "epub-90434b69bcfe20f3"
+  },
+  "additionalSources": [
+    {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    {
+      "chapter": "5",
+      "section": "Your Four Advantages",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    {
+      "chapter": "7",
+      "section": "Reinvention",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    {
+      "chapter": "10",
+      "section": "Who Controls AI",
+      "anchor": "epub-cfff2971594a3d80"
+    },
+    {
+      "chapter": "11",
+      "section": "Scenario Two: The Eschaton",
+      "anchor": "epub-ef33f9fa902c2961"
+    }
+  ],
+  "origin": "book",
+  "confidence": "high",
+  "themeOrigin": "site"
+}

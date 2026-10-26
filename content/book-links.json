@@ -1,0 +1,39 @@
+{
+  "id": "book-links",
+  "origin": "site",
+  "verifiedOn": "2026-10-26",
+  "affiliateLinks": false,
+  "links": [
+    {
+      "id": "official-book",
+      "label": "Get the book",
+      "url": "https://co-existence.ai/",
+      "purpose": "Official book information and retailer choices"
+    },
+    {
+      "id": "publisher",
+      "label": "Publisher and editions",
+      "url": "https://www.penguinrandomhouse.com/books/813026/co-existence-by-ethan-mollick/",
+      "purpose": "Publisher page for the US edition"
+    },
+    {
+      "id": "publisher-uk",
+      "label": "UK publisher and editions",
+      "url": "https://www.penguin.co.uk/books/477828/co-existence-by-mollick-ethan/9780753562710",
+      "purpose": "Publisher page listing UK formats"
+    },
+    {
+      "id": "independent-bookshops",
+      "label": "Find an independent bookshop (US)",
+      "url": "https://bookshop.org/pages/bookstores",
+      "purpose": "US independent bookstore directory; readers elsewhere can ask a local shop for the title or ISBN"
+    },
+    {
+      "id": "newsletter",
+      "label": "One Useful Thing",
+      "url": "https://www.oneusefulthing.org/",
+      "purpose": "Ethan Mollick’s newsletter"
+    }
+  ],
+  "runtimeRule": "Use ordinary links opened only on the reader’s initiative. No embeds, remote images, automatic fetches, preconnects or prefetches."
+}

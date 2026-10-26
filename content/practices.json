@@ -1,0 +1,572 @@
+[
+  {
+    "id": "test-a-real-task",
+    "when": "I consider using AI for a recurring task",
+    "do": "try a representative, permitted example and compare the result with what the task actually requires",
+    "insteadOf": "infer capability from a demonstration or a general benchmark",
+    "why": "Capabilities vary between tasks. A local test gives you evidence for a specific use rather than a general impression.",
+    "lens": "test",
+    "conceptIds": [
+      "jagged-frontier",
+      "calibrated-trust",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "1",
+      "section": "Jaggedness",
+      "anchor": "epub-90434b69bcfe20f3"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "revisit-a-failure",
+    "when": "a newer model or a materially different setup becomes available",
+    "do": "rerun a task that previously failed and compare it with the earlier attempt",
+    "insteadOf": "assume an old limitation still holds",
+    "why": "A recorded failure can become a useful benchmark as models and tools change.",
+    "lens": "test",
+    "conceptIds": [
+      "jagged-frontier",
+      "calibrated-trust"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "check-the-source",
+    "when": "an AI answer supplies a claim I intend to rely on",
+    "do": "open the underlying source and check the claim, its context and any important limitations",
+    "insteadOf": "treat a plausible citation or summary as sufficient evidence",
+    "why": "A real source can still be interpreted poorly. Discovery and verification are separate jobs.",
+    "lens": "verify",
+    "conceptIds": [
+      "plausible-output",
+      "useful-patterns"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When to Use AI",
+      "anchor": "epub-25cc1c992663dc4a",
+      "lineStart": 1442,
+      "lineEnd": 1460
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "reset-a-stuck-chat",
+    "when": "a conversation repeatedly defends the same mistaken premise",
+    "do": "start a fresh conversation with the necessary facts and a neutral description of the problem",
+    "insteadOf": "keep arguing inside the accumulated mistaken context",
+    "why": "Earlier responses shape later ones. A fresh context can help escape an unproductive direction.",
+    "lens": "use",
+    "conceptIds": [
+      "plausible-output"
+    ],
+    "source": {
+      "chapter": "3",
+      "section": "Putting It Together",
+      "anchor": "epub-8e5d383e8ea39273"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "request-specific-critique",
+    "when": "I ask AI for feedback on a proposal I favor",
+    "do": "request concrete weaknesses, missing evidence and conditions under which it would fail",
+    "insteadOf": "accept general encouragement as a quality judgment",
+    "why": "Giving a critic a specific job can improve the feedback, although it does not remove sycophancy or make the feedback true.",
+    "lens": "verify",
+    "conceptIds": [
+      "sycophancy",
+      "ai-influence"
+    ],
+    "source": {
+      "chapter": "3",
+      "section": "Putting It Together",
+      "anchor": "epub-8e5d383e8ea39273"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "supply-the-job-context",
+    "when": "I ask AI to produce something for an actual audience",
+    "do": "state the goal, audience, relevant facts, constraints and the result I need",
+    "insteadOf": "request a generic document and expect the AI to infer my situation",
+    "why": "Context reduces the need for the model to invent a plausible setting for your request.",
+    "lens": "use",
+    "conceptIds": [
+      "context-engineering"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Getting AI to Do Things",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "brief-an-agent",
+    "when": "I delegate a multistep assignment to an agent",
+    "do": "specify the intended result, permitted scope, required deliverables and the checks that establish completion",
+    "insteadOf": "assign a broad goal without defining what an acceptable result looks like",
+    "why": "Clear delegation makes execution and subsequent evaluation more useful.",
+    "lens": "delegate",
+    "conceptIds": [
+      "context-engineering",
+      "collaboration-modes",
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "count-review-and-rework",
+    "when": "I decide whether repeated delegation is worthwhile",
+    "do": "compare doing the task myself with the time for instructions, evaluation, repairs and unsuccessful attempts",
+    "insteadOf": "count only how quickly the AI generated an answer",
+    "why": "The time you spend checking can outweigh the apparent speed of production.",
+    "lens": "delegate",
+    "conceptIds": [
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "review-the-deliverable",
+    "when": "an agent returns a completed assignment",
+    "do": "evaluate the actual deliverables against the brief before using them",
+    "insteadOf": "accept the agent’s report that the work is finished",
+    "why": "Delegated execution moves your effort toward specification and evaluation; it does not remove responsibility for judging the result.",
+    "lens": "verify",
+    "conceptIds": [
+      "collaboration-modes",
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "diagnose-then-iterate",
+    "when": "an AI attempt misses the requirement",
+    "do": "identify a concrete cause, improve the instructions or context, and stop if focused attempts keep failing",
+    "insteadOf": "repeat the same vague request without learning from the result",
+    "why": "Purposeful iterations help distinguish a fixable setup problem from a current capability limit.",
+    "lens": "test",
+    "conceptIds": [
+      "jagged-frontier",
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "save-a-working-method",
+    "when": "a revised approach solves a previously difficult AI task",
+    "do": "save a short account of the working method for future attempts",
+    "insteadOf": "reconstruct the successful approach from memory each time",
+    "why": "A reusable description of a successful technique can help later agents handle the same difficulty.",
+    "lens": "delegate",
+    "conceptIds": [
+      "context-engineering",
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "test-against-an-observable-result",
+    "when": "AI builds an artifact with behavior I can test",
+    "do": "define checks of the requested behavior and use the observed failures to guide revisions",
+    "insteadOf": "judge completion from a polished explanation or appearance alone",
+    "why": "External feedback can support correction. The checks need to represent the actual goal, not just an easy proxy.",
+    "lens": "verify",
+    "conceptIds": [
+      "testable-feedback"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When Reality Checks the AI",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "generate-varied-options",
+    "when": "I need to choose an approach and have too few possibilities",
+    "do": "ask for varied alternatives, challenge repetitive ones and select using my own criteria",
+    "insteadOf": "commit to the first fluent suggestion",
+    "why": "More possibilities help only when they contain meaningful variation and you exercise judgment in selecting among them.",
+    "lens": "use",
+    "conceptIds": [
+      "useful-patterns",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You Need Quantity to Find Quality",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "clear-a-small-block",
+    "when": "a minor obstruction interrupts work whose direction I already understand",
+    "do": "ask for a few possible next moves and use them to resume my own work",
+    "insteadOf": "abandon the task or hand over the whole piece automatically",
+    "why": "A small intervention can restore progress while leaving the important thinking with you.",
+    "lens": "use",
+    "conceptIds": [
+      "useful-patterns",
+      "meaningful-process"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You Need to Keep Moving",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "transform-then-compare",
+    "when": "I need to adapt material I know for a new audience or format",
+    "do": "provide the source and audience, then compare the result for missing caveats and altered meaning",
+    "insteadOf": "assume a readable transformation preserved the substance",
+    "why": "Knowing the material can make review efficient, but AI can smooth away qualifications that matter.",
+    "lens": "use",
+    "conceptIds": [
+      "useful-patterns",
+      "plausible-output"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You Need to Transform What You Already Have",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "seek-another-perspective",
+    "when": "I need to stress-test an interpretation or proposal",
+    "do": "ask for distinct perspectives or a second analysis and investigate material disagreements",
+    "insteadOf": "treat either agreement or a simulated persona as proof",
+    "why": "Alternative perspectives can reveal omissions. They remain inputs, and several systems may share the same error.",
+    "lens": "verify",
+    "conceptIds": [
+      "useful-patterns",
+      "sycophancy",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You Need a Different Perspective",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "ask-for-a-tutor",
+    "when": "I use AI while learning a method I need to perform myself",
+    "do": "request hints and questions that leave me to attempt the next step, then explain my reasoning",
+    "insteadOf": "read a complete solution and mistake its clarity for my understanding",
+    "why": "Well-directed tutoring can support the effort needed to learn instead of bypassing it.",
+    "lens": "learn",
+    "conceptIds": [
+      "effortful-learning",
+      "expertise-pipeline"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "The Universal Tutor",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "retain-unaided-practice",
+    "when": "AI has begun doing a skill I want to retain",
+    "do": "do some of that work myself or explain and reconstruct the method without relying on the answer",
+    "insteadOf": "let successful assisted output stand in for my own capability",
+    "why": "Unused abilities can decline. Intentional practice or a different pattern of assistance can preserve them.",
+    "lens": "keep",
+    "conceptIds": [
+      "effortful-learning",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "write-my-own-starting-view",
+    "when": "I need a judgment or piece of writing to express my own considered view",
+    "do": "record my initial reasoning before asking AI for criticism and alternatives",
+    "insteadOf": "let its first answer silently become my own starting position",
+    "why": "This companion exercise extends the book’s discussion of authorship and influence; it is an option for preserving an independent starting point.",
+    "lens": "keep",
+    "conceptIds": [
+      "meaningful-process",
+      "sycophancy",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "Introduction",
+      "section": "How I Used AI to Write This Book",
+      "anchor": "epub-d5e840158979d994"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  },
+  {
+    "id": "preserve-personal-contribution",
+    "when": "the effort or care I put into a task matters to another person",
+    "do": "decide which contribution I should make personally and fit any assistance around it",
+    "insteadOf": "optimize the wording or speed without considering what the work communicates",
+    "why": "Some work carries meaning through who did it and why. That expectation depends on the relationship and circumstances.",
+    "lens": "keep",
+    "conceptIds": [
+      "meaningful-process"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "strengthen-my-evaluation-knowledge",
+    "when": "AI helps with work in a field I need to understand well",
+    "do": "continue studying the underlying facts and work through examples that build my own judgment",
+    "insteadOf": "assume access to fluent answers removes the need for expertise",
+    "why": "Internal knowledge helps you ask sharper questions and recognize where an answer fails.",
+    "lens": "learn",
+    "conceptIds": [
+      "human-advantages",
+      "effortful-learning"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "Your Four Advantages",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "try-an-unfamiliar-framework",
+    "when": "a familiar approach gives me little traction on a problem",
+    "do": "draw on a framework from another field, ask AI to apply it, and assess whether the connection is useful",
+    "insteadOf": "keep asking for more versions of the same approach",
+    "why": "Breadth gives you ways to direct an AI beyond its default response. An analogy still needs to fit the problem.",
+    "lens": "use",
+    "conceptIds": [
+      "human-advantages",
+      "useful-patterns"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "Your Four Advantages",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "train-my-taste",
+    "when": "I review work in a field whose quality matters to me",
+    "do": "compare strong and weak human examples and explain what I value or reject",
+    "insteadOf": "use average AI output as my only standard",
+    "why": "Exposure and considered reactions build the judgment needed to select useful material from abundant output.",
+    "lens": "learn",
+    "conceptIds": [
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "Your Four Advantages",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "follow-the-workflow",
+    "when": "AI makes one step much faster but the final outcome barely changes",
+    "do": "trace the handoffs and identify the next constraint before generating more output",
+    "insteadOf": "assume additional speed at my step will fix the whole process",
+    "why": "A bottleneck can move. Improvements need to reach the outcome rather than accumulate as extra work waiting for someone else.",
+    "lens": "test",
+    "conceptIds": [
+      "workflow-bottlenecks"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "O-Rings, Garbage Cans, and Dissolving Walls",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "make-sharing-worthwhile",
+    "when": "I ask a team to share useful AI experiments",
+    "do": "make permitted experimentation clear and commit to concrete benefits for the people sharing improvements",
+    "insteadOf": "request openness while leaving punishment, replacement or workload expectations unresolved",
+    "why": "People may rationally hide gains when disclosure threatens them. Credible commitments matter more than enthusiasm.",
+    "lens": "use",
+    "conceptIds": [
+      "organizational-adoption",
+      "worker-agency"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "Reinvention",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "preserve-an-apprenticeship",
+    "when": "automation removes work that previously taught a junior colleague",
+    "do": "create a learning assignment with meaningful challenge, wider context and feedback from an experienced person",
+    "insteadOf": "remove the task without replacing its learning function",
+    "why": "Short-term efficiency can weaken the future supply of expertise if novices lose the experiences that build it.",
+    "lens": "learn",
+    "conceptIds": [
+      "expertise-pipeline",
+      "effortful-learning"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "What Should We Teach?",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "inspect-a-persuasive-recommendation",
+    "when": "an AI recommendation seems unusually tailored or convincing",
+    "do": "check its factual support and ask whose objective and incentives the advice advances",
+    "insteadOf": "equate personal relevance or friendliness with trustworthy evidence",
+    "why": "The ability to tailor an argument can serve understanding, sales or deception. Persuasiveness does not distinguish among them.",
+    "lens": "verify",
+    "conceptIds": [
+      "ai-influence",
+      "sycophancy"
+    ],
+    "source": {
+      "chapter": "9",
+      "section": "Changing Minds",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "confirm-beyond-the-recording",
+    "when": "a recording or apparent message asks me to take a consequential action",
+    "do": "confirm the source through an independent, established route before acting",
+    "insteadOf": "rely on a convincing voice or image as sufficient proof",
+    "why": "Synthetic media make impersonation easier. This generalizes the book’s advice to establish identity beyond a suspicious interaction.",
+    "lens": "verify",
+    "conceptIds": [
+      "synthetic-evidence",
+      "ai-influence"
+    ],
+    "source": {
+      "chapter": "9",
+      "section": "Changing Minds",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  },
+  {
+    "id": "bound-my-agent-work",
+    "when": "working with agents expands how much work I can initiate",
+    "do": "set a limit on concurrent assignments and a stopping point I can sustain",
+    "insteadOf": "let additional capacity turn every spare moment into another task to supervise",
+    "why": "Greater production capacity can intensify work and overwhelm attention unless you set boundaries.",
+    "lens": "keep",
+    "conceptIds": [
+      "worker-agency",
+      "collaboration-modes"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "check-whether-it-is-ritual",
+    "when": "I consider automating a task that feels repetitive or ceremonial",
+    "do": "check whether it still supports a real decision, relationship or obligation before delegating it",
+    "insteadOf": "assume that an irritating process has no meaningful purpose",
+    "why": "Routine work may be dispensable ritual, but it can also carry important human value. The distinction matters before automation.",
+    "lens": "delegate",
+    "conceptIds": [
+      "useful-patterns",
+      "meaningful-process",
+      "workflow-bottlenecks"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When the Work Is Ritual",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high"
+  }
+]

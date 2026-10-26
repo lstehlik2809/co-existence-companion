@@ -1,0 +1,124 @@
+{
+  "id": "site-copy",
+  "origin": "site",
+  "confidence": "medium",
+  "identity": {
+    "title": "Co-Existence practice companion — unofficial companion",
+    "disclaimer": "An unofficial companion to Co-Existence by Ethan Mollick. Not affiliated with or endorsed by the author or publisher.",
+    "footer": "Unofficial companion. Not affiliated with or endorsed by Ethan Mollick or the publisher.",
+    "bookLinkId": "official-book"
+  },
+  "start": {
+    "headline": "Find where AI helps in your work",
+    "explanation": "AI may handle a task you find difficult and struggle with one you find easy. Find out by trying your own examples, then decide how you want to work.",
+    "purpose": "Test a task, make a considered choice and try one change to your routine.",
+    "applyAction": "Apply them to my work",
+    "understandAction": "Understand the ideas",
+    "mapAction": "Start your map",
+    "bookNote": "This unofficial companion explores a small selection of ideas from Co-Existence by Ethan Mollick. It works best alongside the book, which develops the arguments, evidence and qualifications in much greater depth."
+  },
+  "labels": {
+    "siteOrigin": "Companion addition",
+    "bookSource": "Based on the book",
+    "why": "Why this practice?",
+    "readMore": "Read more in the book: chapter {chapter}",
+    "introReadMore": "Read more in the book: Introduction",
+    "untested": "Not tested yet"
+  },
+  "test": {
+    "instruction": "Copy a prompt into your own AI tool. Return here to record what happened.",
+    "evidenceNote": "A guess does not count as a test. No recorded result means this task remains untested.",
+    "privacyNote": "Use only inputs you are allowed to share with that tool. A fictional example may be enough to start.",
+    "transferNote": "Pasting information into another AI tool is your action and is subject to that tool’s data practices."
+  },
+  "decide": {
+    "instruction": "Use what you observed to choose an arrangement you can evaluate and sustain. You can change it later.",
+    "choices": [
+      {
+        "id": "use-ai",
+        "label": "Use AI",
+        "help": "Choose clear handoffs or work back and forth. Record the check you will use."
+      },
+      {
+        "id": "delegate-agent",
+        "label": "Delegate to an agent with oversight",
+        "help": "Define the assignment, its limits, completion checks and any needed review points."
+      },
+      {
+        "id": "keep-deliberately",
+        "label": "Keep deliberately",
+        "help": "Name the contribution you want to make yourself. It may cover only part of the task."
+      },
+      {
+        "id": "undecided",
+        "label": "Undecided",
+        "help": "Record the uncertainty and what evidence would help."
+      }
+    ],
+    "keepReasons": [
+      {
+        "id": "skill",
+        "label": "Skill"
+      },
+      {
+        "id": "judgment",
+        "label": "Judgment"
+      },
+      {
+        "id": "voice",
+        "label": "Voice"
+      },
+      {
+        "id": "relationship",
+        "label": "Relationship"
+      },
+      {
+        "id": "accountability",
+        "label": "Accountability",
+        "origin": "site",
+        "help": "Responsibility remains with me in every mode; choosing this records a reason for my own direct involvement."
+      }
+    ]
+  },
+  "map": {
+    "caveat": "This is a record of your tests, not a general measure of AI capability. A marker reflects one task, tool and set of conditions.",
+    "partialResult": "Usable with fixes includes your review and repair work.",
+    "keepNote": "Keeping a task deliberately records your choice; it does not mean AI failed the task."
+  },
+  "judgment": {
+    "instruction": "Choose an option, then compare the reasoning. Some situations support more than one answer.",
+    "progress": "Ideas you have read and tried",
+    "noScore": "Use the feedback to examine your reasoning; there is no score."
+  },
+  "experiment": {
+    "instruction": "Choose one change small enough to try in your normal work.",
+    "template": "When {when}, I will {do} instead of {insteadOf}.",
+    "successSignal": "I’ll know it worked if…",
+    "oneAtATime": "You already have an experiment in progress. Check in on it before starting another.",
+    "bookPrompt": "The book goes further into the evidence and trade-offs behind these choices. Continue reading alongside your experiment."
+  },
+  "checkIn": {
+    "prompts": [
+      "What did you try?",
+      "What happened?",
+      "What surprised you?"
+    ],
+    "choices": [
+      "Keep this change",
+      "Adjust and try again",
+      "Drop this change"
+    ]
+  },
+  "retest": {
+    "message": "Your last test was {days} days ago. Consider trying it again, especially if the tool or the work has changed.",
+    "scheduleNote": "The 90-day reminder and 10-day experiment check-in are companion defaults, not intervals prescribed by the book."
+  },
+  "privacy": "Your entries stay in this browser on this device. This companion has no accounts, analytics or AI connection. Browser data can be cleared; export a copy if you want to keep it.",
+  "about": "Co-Existence: The Next Phase of AI is by Ethan Mollick. This independently prepared, unofficial companion offers brief ideas and original exercises for applying them. It is not affiliated with or endorsed by the author or publisher. Buy the book to support the author’s work and read the evidence, arguments and qualifications behind these ideas.",
+  "exportCredit": "An unofficial practice companion to Co-Existence by Ethan Mollick. Get the book: https://co-existence.ai/",
+  "curatorNote": {
+    "path": "curator-note.md",
+    "status": "awaiting-user-text",
+    "renderUntilWritten": false
+  }
+}

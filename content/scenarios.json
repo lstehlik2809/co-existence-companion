@@ -1,0 +1,603 @@
+[
+  {
+    "id": "analyst-unchecked-rate",
+    "role": "Analyst",
+    "setup": "An assistant converts a monthly service dataset into a cancellation-rate table. The output looks consistent, but you notice it may have counted paused accounts as cancellations. A director needs the table shortly. You can inspect the underlying records.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Use the table and add a general AI disclaimer.",
+        "feedback": "A disclaimer does not resolve the suspected denominator problem. Plausible output still needs a check of the definition that determines the result."
+      },
+      {
+        "id": "b",
+        "text": "Check the definition and recalculate a known slice before relying on the table.",
+        "feedback": "This targets a concrete failure mode using evidence outside the answer. If the definition is wrong, correct the analysis before using it."
+      },
+      {
+        "id": "c",
+        "text": "Ask the same assistant whether it is confident in its cancellation definition.",
+        "feedback": "That can clarify an assumption, but confidence is not an independent check. The source records and intended definition can test the claim."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "b"
+    ],
+    "conceptIds": [
+      "plausible-output",
+      "testable-feedback"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When Reality Checks the AI",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "engineer-agent-permission",
+    "role": "Engineer",
+    "setup": "You want an agent to prepare a small change to an internal scheduling tool. It could work in a separate branch. The brief defines the feature but says nothing about credentials, dependencies or release access. You will be available only at the end.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clarify allowed changes, completion checks and release limits before delegation.",
+        "feedback": "Conjurer work needs an actionable assignment and boundaries. A separate branch helps, but it does not settle what the agent may change or how you will assess completion."
+      },
+      {
+        "id": "b",
+        "text": "Give it normal project access and rely on a final statement that tests passed.",
+        "feedback": "Normal access may grant more authority than this assignment needs. A completion statement also does not replace examining the deliverable and the relevant checks."
+      },
+      {
+        "id": "c",
+        "text": "Supervise every edit in real time.",
+        "feedback": "Close collaboration is defensible if you can stay involved, but you cannot here. Choose a mode compatible with your availability, or postpone the assignment."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "a"
+    ],
+    "conceptIds": [
+      "context-engineering",
+      "collaboration-modes",
+      "testable-feedback"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "manager-sharing-discoveries",
+    "role": "Manager",
+    "setup": "A colleague has found a way to prepare client materials faster with an approved AI tool. They are hesitant to demonstrate it because the last efficiency initiative led to higher quotas. You would like the team to learn from the experiment.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask for a mandatory demonstration so everyone gets the same opportunity.",
+        "feedback": "A mandatory demonstration leaves the reason for hiding unresolved. Sharing may still feel like volunteering for a workload increase."
+      },
+      {
+        "id": "b",
+        "text": "Promise that nobody will ever face a staffing change.",
+        "feedback": "Reassurance needs to be credible and within your authority. An unlimited promise you cannot keep can weaken trust further."
+      },
+      {
+        "id": "c",
+        "text": "Agree concrete protections and benefits you can honor, then invite voluntary sharing.",
+        "feedback": "This addresses the incentive to hide rather than treating hesitation as resistance. Leadership needs to follow through on how discoveries benefit the people who share them."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "c"
+    ],
+    "conceptIds": [
+      "organizational-adoption",
+      "worker-agency"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "Reinvention",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "teacher-learning-evidence",
+    "role": "Teacher",
+    "setup": "Your students can produce polished AI-assisted explanations of a local water-use project. You want both useful assistance and evidence that each student understands the reasoning. You can redesign how the work is assessed.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Allow structured AI help and ask students to explain a fresh example unaided.",
+        "feedback": "This separates assisted production from demonstrated understanding. It is defensible if the unaided task actually tests the intended learning."
+      },
+      {
+        "id": "b",
+        "text": "Keep an unaided first attempt, then let students use AI hints and reflect on revisions.",
+        "feedback": "This can preserve useful struggle and make learning visible. It is defensible if students still do the reasoning rather than simply transcribe a finished answer."
+      },
+      {
+        "id": "c",
+        "text": "Grade the polished final explanation as direct evidence of individual understanding.",
+        "feedback": "The artifact alone no longer identifies what its author can do. The learning goal needs evidence beyond fluency."
+      }
+    ],
+    "verdict": "several-defensible",
+    "recommendedOptionIds": [
+      "a",
+      "b"
+    ],
+    "conceptIds": [
+      "effortful-learning",
+      "expertise-pipeline"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "What Should We Teach?",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "designer-converging-ideas",
+    "role": "Designer",
+    "setup": "An assistant proposes twelve approaches to wayfinding for a community arts event. Most use the same visual idea with different colors. The brief calls for exploring genuinely different approaches before choosing.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pick the most polished proposal; twelve options are enough exploration.",
+        "feedback": "The number of outputs hides the lack of variation. Your brief asks for different approaches, not several treatments of one approach."
+      },
+      {
+        "id": "b",
+        "text": "Ask for alternatives based on distinct constraints and explain your own selection criteria.",
+        "feedback": "This directs variation and retains your role in deciding which ideas fit. Generating more only helps when the alternatives differ in useful ways."
+      },
+      {
+        "id": "c",
+        "text": "Ask the assistant to select the most original proposal without further direction.",
+        "feedback": "It may offer another view, but it still lacks the contextual criteria you have not supplied. Outsourcing selection does not resolve the narrow starting set."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "b"
+    ],
+    "conceptIds": [
+      "useful-patterns",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You Need Quantity to Find Quality",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "hr-internal-application",
+    "role": "HR partner",
+    "setup": "An internal candidate asks you to help explain why they want a role change. AI could make the statement clearer, but the candidate also wants it to sound like them and represent what they actually care about.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ask the candidate for their reasons first, then use AI to suggest clearer organization.",
+        "feedback": "A clear division of work can preserve the candidate’s intentions while assisting expression. Confirm that the revised version still says what they mean."
+      },
+      {
+        "id": "b",
+        "text": "Let the candidate work through alternatives with AI and discuss the final reasoning together.",
+        "feedback": "Close collaboration can also preserve voice if the candidate stays engaged. Ask which reasons they endorse rather than judging only the finished prose."
+      },
+      {
+        "id": "c",
+        "text": "Have AI infer persuasive motivations from the job description.",
+        "feedback": "That might produce convincing language while replacing the candidate’s actual reasons. The meaning of the statement matters as well as its polish."
+      }
+    ],
+    "verdict": "several-defensible",
+    "recommendedOptionIds": [
+      "a",
+      "b"
+    ],
+    "conceptIds": [
+      "meaningful-process",
+      "collaboration-modes"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "researcher-narrow-evidence",
+    "role": "Researcher",
+    "setup": "An agent finds a real study supporting a proposed training change. The summary says the result applies to all employees, but the study involved a short intervention in a single setting. The recommendation would affect several offices.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Check the study’s scope and distinguish its findings from the proposed extension.",
+        "feedback": "A genuine citation does not establish the broader claim. Reviewing the original lets you preserve the limitations that a fluent synthesis may have removed."
+      },
+      {
+        "id": "b",
+        "text": "Accept the recommendation because the citation exists.",
+        "feedback": "Existence checks only one failure mode. Interpretation and generalization can still be wrong."
+      },
+      {
+        "id": "c",
+        "text": "Ask two other models whether the recommendation sounds reasonable.",
+        "feedback": "Different views may expose a weakness, but agreement does not establish applicability. The original evidence and your setting remain central."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "a"
+    ],
+    "conceptIds": [
+      "plausible-output",
+      "useful-patterns"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When to Use AI",
+      "anchor": "epub-25cc1c992663dc4a",
+      "lineStart": 1442,
+      "lineEnd": 1460
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "buyer-friendly-adviser",
+    "role": "Procurement specialist",
+    "setup": "A software supplier offers a conversational adviser that uses your requirements to recommend a service tier. It answers your objections patiently and makes the most expensive tier sound particularly suitable. You have not checked its claims.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Treat the personal fit of the conversation as evidence that the tier is right.",
+        "feedback": "Personal relevance is part of how dialogue persuades. It does not establish that the adviser’s incentives match yours."
+      },
+      {
+        "id": "b",
+        "text": "Reject the tier simply because an AI recommended it.",
+        "feedback": "The recommendation could still be useful. Algorithm aversion discards a possibility without assessing the evidence."
+      },
+      {
+        "id": "c",
+        "text": "Compare its claims and trade-offs with your requirements and independent evidence.",
+        "feedback": "This separates persuasion from support for the recommendation. The useful question is whether the tier meets your needs, given the supplier’s incentives."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "c"
+    ],
+    "conceptIds": [
+      "ai-influence",
+      "calibrated-trust"
+    ],
+    "source": {
+      "chapter": "9",
+      "section": "Changing Minds",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "writer-position-before-prose",
+    "role": "Writer",
+    "setup": "You are writing a signed opinion piece about changing a local library service. AI has produced an elegant argument, and you notice that you are adopting some of its claims before deciding what you actually believe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pause and write your own reasons, then use AI to challenge them.",
+        "feedback": "This companion technique creates an independent starting point. It is one way to protect your contribution, rather than a rule that all authors must follow."
+      },
+      {
+        "id": "b",
+        "text": "Keep the AI draft but inspect each claim and rewrite around the position you can defend.",
+        "feedback": "This is also defensible if you can resist being carried along by fluency. Own the judgment and verify the evidence, rather than merely personalizing the wording."
+      },
+      {
+        "id": "c",
+        "text": "Publish it because polished prose is the goal of writing.",
+        "feedback": "For a signed opinion, the reasoning and commitment are part of the work. A persuasive artifact alone does not establish that it expresses your position."
+      }
+    ],
+    "verdict": "several-defensible",
+    "recommendedOptionIds": [
+      "a",
+      "b"
+    ],
+    "conceptIds": [
+      "meaningful-process",
+      "sycophancy",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "Introduction",
+      "section": "How I Used AI to Write This Book",
+      "anchor": "epub-d5e840158979d994"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "junior-analyst-understanding",
+    "role": "Junior analyst",
+    "setup": "AI has produced a query you need for a recurring customer report. It gives the expected result on the sample. You also need to learn the method well enough to adapt it next month, and cannot yet explain an important join.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Save the query and assume the successful result means you learned the method.",
+        "feedback": "A working output is evidence about the artifact. It is not evidence that you can reconstruct or adapt its reasoning."
+      },
+      {
+        "id": "b",
+        "text": "Ask for a small guided example, attempt the join and explain it before checking.",
+        "feedback": "This keeps you doing the learning work. Then test your understanding on a changed example without relying on the completed query."
+      },
+      {
+        "id": "c",
+        "text": "Ask for a longer explanation and read it once before moving on.",
+        "feedback": "Explanation can help, but clarity can feel like understanding. Add an attempt that reveals what you can actually do."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "b"
+    ],
+    "conceptIds": [
+      "effortful-learning",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "The Universal Tutor",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "operations-shifted-queue",
+    "role": "Operations lead",
+    "setup": "AI now prepares service-request summaries rapidly. Staff produce twice as many, but cases still wait for a weekly decision meeting. You are considering what to change next.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Study the decision queue and the purpose of the meeting with the people involved.",
+        "feedback": "The constraint may have moved downstream. Understanding the actual process is a defensible next step before increasing supply further."
+      },
+      {
+        "id": "b",
+        "text": "Reduce summary production temporarily and improve the quality of cases sent for decision.",
+        "feedback": "This may also help if decision capacity is fixed and quality varies. Measure the final outcome, rather than assuming that more summaries are better."
+      },
+      {
+        "id": "c",
+        "text": "Generate another batch of summaries to demonstrate further productivity.",
+        "feedback": "More output at the faster step does not resolve the waiting cases. It may increase the burden on the constrained part of the workflow."
+      }
+    ],
+    "verdict": "several-defensible",
+    "recommendedOptionIds": [
+      "a",
+      "b"
+    ],
+    "conceptIds": [
+      "workflow-bottlenecks",
+      "worker-agency"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "O-Rings, Garbage Cans, and Dissolving Walls",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "support-review-cost",
+    "role": "Customer support lead",
+    "setup": "A recurring report takes you about 25 minutes. An agent drafts it in four, but checking normally takes 18 minutes, and some attempts need repairs. The report is useful and must remain accurate. You are deciding whether to keep delegating.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep delegating because four minutes is much less than 25.",
+        "feedback": "This ignores checking, setup and unsuccessful attempts. Generation time alone does not establish a saving."
+      },
+      {
+        "id": "b",
+        "text": "Do it yourself for now.",
+        "feedback": "That may be sensible if checking and repair consume the benefit. The book does not require you to delegate every task an agent can attempt."
+      },
+      {
+        "id": "c",
+        "text": "Run a limited comparison of full effort and quality, including failures.",
+        "feedback": "That may clarify the trade-off if measurement is inexpensive. Set a stopping point so testing does not become a costlier habit than the task."
+      }
+    ],
+    "verdict": "depends",
+    "recommendedOptionIds": [],
+    "conceptIds": [
+      "delegation-calculus",
+      "collaboration-modes"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "editor-unverified-recording",
+    "role": "Communications editor",
+    "setup": "A convincing clip appears to show a partner approving use of their personal story in a campaign. It arrives through an unfamiliar account. You have an established contact route, but the campaign deadline is close.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confirm the request through the established contact route before using the story.",
+        "feedback": "This checks the source independently. The companion scenario applies the book’s concerns about synthetic evidence to a new setting."
+      },
+      {
+        "id": "b",
+        "text": "Ask a colleague whether the clip looks authentic.",
+        "feedback": "Another viewer may notice a problem, but visual plausibility cannot establish identity or permission."
+      },
+      {
+        "id": "c",
+        "text": "Treat all recordings as fake and abandon the story permanently.",
+        "feedback": "Synthetic media can encourage blanket distrust too. Verification through an established route can distinguish a real request from an impersonation."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "a"
+    ],
+    "conceptIds": [
+      "synthetic-evidence",
+      "ai-influence"
+    ],
+    "source": {
+      "chapter": "9",
+      "section": "Changing Minds",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "lead-more-agents-more-work",
+    "role": "Team lead",
+    "setup": "You can now start several agent assignments before lunch. By evening you face a backlog of review work and keep checking results after hours. The outputs are often useful, but you feel less able to choose what matters.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Set a limit on active assignments and a stopping point for review.",
+        "feedback": "A defensible response is to fit agent use to your attention and priorities. More production capacity does not create unlimited evaluation capacity."
+      },
+      {
+        "id": "b",
+        "text": "Switch some work to closer collaboration and delegate fewer complete assignments.",
+        "feedback": "A different mode can be defensible when long autonomous runs create too much review. Compare the full workload and quality of the alternatives."
+      },
+      {
+        "id": "c",
+        "text": "Start more agents so their eventual savings can absorb the backlog.",
+        "feedback": "That may compound the queue. The capacity to initiate work is already exceeding the capacity to evaluate it."
+      }
+    ],
+    "verdict": "several-defensible",
+    "recommendedOptionIds": [
+      "a",
+      "b"
+    ],
+    "conceptIds": [
+      "worker-agency",
+      "collaboration-modes",
+      "delegation-calculus"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "planner-old-failure",
+    "role": "Project planner",
+    "setup": "You stopped using AI for a scheduling task after a poor result last year. A substantially changed tool is now available, and you can try a fictional example without affecting anyone’s work. A colleague says the old failure settles the question.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Keep the old verdict indefinitely because a failure proves unreliability.",
+        "feedback": "A previous failure is useful evidence about that attempt. It does not establish the current boundary of a changed system."
+      },
+      {
+        "id": "b",
+        "text": "Test the new setup on the example and compare results using the same requirements.",
+        "feedback": "This updates a task-specific belief at low cost. Keep the earlier failure so you can see what changed."
+      },
+      {
+        "id": "c",
+        "text": "Replace the live process immediately because the model is newer.",
+        "feedback": "Newer is a reason to investigate, not proof of fitness. The jagged frontier still calls for a local test."
+      }
+    ],
+    "verdict": "one-best",
+    "recommendedOptionIds": [
+      "b"
+    ],
+    "conceptIds": [
+      "jagged-frontier",
+      "calibrated-trust"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "high"
+  },
+  {
+    "id": "mentor-changing-junior-work",
+    "role": "Mentor",
+    "setup": "An agent handles the basic preparation that used to introduce new colleagues to a field. Your current team is faster. You still need people who can judge unusual cases in a few years, but there is no obvious replacement learning route.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Design supervised cases that include real difficulty and the wider workflow.",
+        "feedback": "This can preserve the learning function while allowing the task itself to change. It needs experienced feedback, not only more exercises."
+      },
+      {
+        "id": "b",
+        "text": "Protect selected live tasks for juniors and use AI for feedback after their attempts.",
+        "feedback": "This is another defensible route if the tasks are genuinely educational and the feedback is reviewed. The aim is growing capability, not preserving every old chore."
+      },
+      {
+        "id": "c",
+        "text": "Delay the issue until current experts leave; assisted output is strong today.",
+        "feedback": "Today’s output does not demonstrate a future supply of judgment. Removing the apprenticeship can weaken all later stages of the expertise pipeline."
+      }
+    ],
+    "verdict": "several-defensible",
+    "recommendedOptionIds": [
+      "a",
+      "b"
+    ],
+    "conceptIds": [
+      "expertise-pipeline",
+      "effortful-learning"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "What Should We Teach?",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "site",
+    "confidence": "high"
+  }
+]

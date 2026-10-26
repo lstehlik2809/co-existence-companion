@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172f42">
+  <meta name="description" content="An unofficial Co-Existence practice companion. Test your own tasks, make considered choices and try one change to your work. Private, browser-only and offline ready.">
+  <title>Co-Existence practice companion — unofficial companion</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./css/style.css">
+  <script type="module" src="./js/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <aside class="sidebar">
+    <a class="brand" href="#start"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="21"/><circle cx="24" cy="24" r="13"/><path d="M24 3v42M3 24h42M24 10l17 14-17 9L9 24Z"/></svg><span>Co-Existence<small>A practice atlas</small></span></a>
+    <p class="sidebar-note">An unofficial companion<br>to Ethan Mollick’s book</p>
+    <nav aria-label="Practice journey" class="steps">
+      <a href="#map"><span>01</span> Map your work</a>
+      <a href="#test"><span>02</span> Run a test</a>
+      <a href="#decide"><span>03</span> Make a choice</a>
+      <a href="#judgment"><span>04</span> Practice judgment</a>
+      <a href="#experiment"><span>05</span> Try one change</a>
+    </nav>
+    <nav aria-label="Resources" class="resources"><a href="#library">Ideas library <span aria-hidden="true">↗</span></a><a href="#about">About the companion</a><a href="#data">My data & privacy</a></nav>
+    <div class="sidebar-bottom"><span class="local-dot" aria-hidden="true"></span> A private space to experiment.<br><small>Your entries stay in this browser.</small></div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>Field notes for working with AI</span><label class="theme-label" for="theme">Appearance <select id="theme"><option value="auto">System</option><option value="light">Light</option><option value="dark">Dark</option></select></label></header>
+    <div id="storage-warning" class="notice" hidden></div>
+    <div id="update-notice" class="notice" hidden>A new edition of the companion is ready. <button id="apply-update" type="button">Reload to update</button></div>
+    <main id="main" tabindex="-1"><p class="loading">Opening your atlas…</p></main>
+    <footer><p id="footer-credit">Unofficial companion. Not affiliated with or endorsed by Ethan Mollick or the publisher.</p><a href="https://co-existence.ai/" rel="noreferrer">Get the book</a><span>Built for reflection, kept in your browser.</span></footer>
+  </div>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <noscript><p>This interactive companion needs JavaScript. It runs locally in your browser and makes no AI requests.</p></noscript>
+</body>
+</html>

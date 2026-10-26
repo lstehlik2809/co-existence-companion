@@ -1,0 +1,703 @@
+[
+  {
+    "id": "jagged-frontier",
+    "theme": "find-the-frontier",
+    "title": "The jagged frontier",
+    "kind": "practice",
+    "summary": "AI succeeds and fails in combinations that human task difficulty does not predict. Those boundaries also change. You need evidence about the particular work, model and conditions you are considering.",
+    "whyItMatters": "A strong result on one task cannot establish reliability on the next. Test a representative piece of work before changing your routine.",
+    "practiceIds": [
+      "test-a-real-task",
+      "revisit-a-failure",
+      "diagnose-then-iterate"
+    ],
+    "scenarioIds": [
+      "planner-old-failure"
+    ],
+    "source": {
+      "chapter": "1",
+      "section": "Jaggedness",
+      "anchor": "epub-90434b69bcfe20f3"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "calibrated-trust",
+    "theme": "find-the-frontier",
+    "title": "Trust that follows the evidence",
+    "kind": "practice",
+    "summary": "Impressive successes can encourage excessive trust; one conspicuous failure can trigger algorithm aversion. Both reactions turn a local result into a claim about AI as a whole.",
+    "whyItMatters": "Keep both successes and failures in view. Update your expectations for a task without treating a machine as either universally capable or permanently useless.",
+    "practiceIds": [
+      "test-a-real-task",
+      "revisit-a-failure"
+    ],
+    "scenarioIds": [
+      "buyer-friendly-adviser",
+      "planner-old-failure"
+    ],
+    "source": {
+      "chapter": "1",
+      "section": "Co-Existence on the Jagged Frontier",
+      "anchor": "epub-90434b69bcfe20f3"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "growing-capability",
+    "theme": "find-the-frontier",
+    "title": "Growing capability, uneven adoption",
+    "kind": "context",
+    "summary": "Training scale, reasoning time and tool access can expand capability. Much existing ability remains unused: a capability overhang. Wider adoption also creates infrastructure demands and environmental costs whose local and collective effects differ.",
+    "whyItMatters": "Current habits can lag behind available tools. Individual productivity, widespread adoption and social benefit are different outcomes, and improvements in one do not establish the others.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "2",
+      "section": "Scaling Models and Agents",
+      "anchor": "epub-365df2e5fc2c0159"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "1",
+        "section": "Co-Existence",
+        "anchor": "epub-90434b69bcfe20f3"
+      },
+      {
+        "chapter": "2",
+        "section": "The Cost of Scale",
+        "anchor": "epub-365df2e5fc2c0159"
+      },
+      {
+        "chapter": "2",
+        "section": "Scaling Users and Uses",
+        "anchor": "epub-365df2e5fc2c0159"
+      }
+    ]
+  },
+  {
+    "id": "unexpected-capability",
+    "theme": "find-the-frontier",
+    "title": "More than an average answer",
+    "kind": "context",
+    "summary": "Models can combine knowledge from many people and outperform individual contributors, an idea called transcendence. Apparently sudden abilities, called emergence, may also reflect bottlenecks disappearing or how tests measure progress; the explanation remains contested.",
+    "whyItMatters": "Neither an average-human comparison nor a smooth progress curve tells you exactly where a model will succeed. Capability claims need task-specific evidence.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "1",
+      "section": "Jaggedness",
+      "anchor": "epub-90434b69bcfe20f3"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "plausible-output",
+    "theme": "direct-and-check",
+    "title": "Plausible output needs checking",
+    "kind": "practice",
+    "summary": "Language models generate responses from learned patterns and conversation context. Outputs vary, can contain convincing falsehoods, and may defend an earlier mistake. A chat history is also a limited working context, rather than dependable shared memory.",
+    "whyItMatters": "Fluency, repetition and a confident explanation are weak evidence of correctness. Check the underlying claim and supply relevant context explicitly.",
+    "practiceIds": [
+      "check-the-source",
+      "reset-a-stuck-chat",
+      "transform-then-compare"
+    ],
+    "scenarioIds": [
+      "analyst-unchecked-rate",
+      "researcher-narrow-evidence"
+    ],
+    "source": {
+      "chapter": "3",
+      "section": "How a Language Model Thinks",
+      "anchor": "epub-8e5d383e8ea39273"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "3",
+        "section": "Putting It Together",
+        "anchor": "epub-8e5d383e8ea39273"
+      }
+    ]
+  },
+  {
+    "id": "sycophancy",
+    "theme": "direct-and-check",
+    "title": "Agreement is not an independent judgment",
+    "kind": "practice",
+    "summary": "Training and commercial incentives can make assistants flatter users and follow their preferred conclusions. A reassuring response can reinforce a weak idea rather than challenge it.",
+    "whyItMatters": "Ask for specific objections and evidence. An AI critic can broaden your view, but its criticism and praise still need your judgment.",
+    "practiceIds": [
+      "request-specific-critique",
+      "seek-another-perspective",
+      "write-my-own-starting-view",
+      "inspect-a-persuasive-recommendation"
+    ],
+    "scenarioIds": [
+      "writer-position-before-prose"
+    ],
+    "source": {
+      "chapter": "3",
+      "section": "How a Language Model Thinks",
+      "anchor": "epub-8e5d383e8ea39273"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "3",
+        "section": "Putting It Together",
+        "anchor": "epub-8e5d383e8ea39273"
+      }
+    ]
+  },
+  {
+    "id": "context-engineering",
+    "theme": "direct-and-check",
+    "title": "Useful context beats prompting tricks",
+    "kind": "practice",
+    "summary": "Explain the purpose, audience, relevant information, constraints and acceptable result. Mollick argues that many older prompting tricks add little with newer systems. Personas can change the perspective or tone without granting additional expertise.",
+    "whyItMatters": "Spend effort defining the actual job. Give the AI what it cannot infer about your situation instead of relying on a clever formula.",
+    "practiceIds": [
+      "supply-the-job-context",
+      "brief-an-agent",
+      "save-a-working-method"
+    ],
+    "scenarioIds": [
+      "engineer-agent-permission"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Getting AI to Do Things",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "collaboration-modes",
+    "theme": "direct-and-check",
+    "title": "Choose how closely to work together",
+    "kind": "practice",
+    "summary": "Centaur work divides human and AI responsibilities. Cyborg work interweaves them. Conjurer work hands execution to an agent while the person defines and evaluates the assignment. The appropriate arrangement depends on the work.",
+    "whyItMatters": "Use separate handoffs, close collaboration or agent delegation deliberately. More autonomy is useful only when the task and your ability to evaluate it make that arrangement worthwhile.",
+    "practiceIds": [
+      "brief-an-agent",
+      "review-the-deliverable",
+      "bound-my-agent-work"
+    ],
+    "scenarioIds": [
+      "engineer-agent-permission",
+      "hr-internal-application",
+      "support-review-cost",
+      "lead-more-agents-more-work"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "delegation-calculus",
+    "theme": "direct-and-check",
+    "title": "Count the cost of checking",
+    "kind": "practice",
+    "summary": "Delegation depends on your own completion time, the agent’s chance of success and the effort needed to evaluate its work. Repeated review and repair can erase an apparent saving.",
+    "whyItMatters": "Measure the whole attempt, including instructions, checking and rework. A slower human task can be a better delegation candidate than a short task with expensive review.",
+    "practiceIds": [
+      "brief-an-agent",
+      "count-review-and-rework",
+      "review-the-deliverable",
+      "diagnose-then-iterate",
+      "save-a-working-method"
+    ],
+    "scenarioIds": [
+      "support-review-cost",
+      "lead-more-agents-more-work"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "testable-feedback",
+    "theme": "direct-and-check",
+    "title": "Give the work an observable test",
+    "kind": "practice",
+    "summary": "When outputs can be checked against external results, agents can use the feedback to correct themselves. This reduces dependence on continuous human inspection, within the limits of the task and the checks.",
+    "whyItMatters": "Define a meaningful test of the requested behavior. Passing a narrow check does not establish everything you care about, especially when the agent can influence that check.",
+    "practiceIds": [
+      "test-against-an-observable-result"
+    ],
+    "scenarioIds": [
+      "analyst-unchecked-rate",
+      "engineer-agent-permission"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When Reality Checks the AI",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "7",
+        "section": "Revolution",
+        "anchor": "epub-6e98c27ae7374e54"
+      }
+    ]
+  },
+  {
+    "id": "useful-patterns",
+    "theme": "direct-and-check",
+    "title": "Look for useful patterns of assistance",
+    "kind": "practice",
+    "summary": "AI can expand options, clear small blocks, transform familiar material, discover sources and offer other perspectives. It can extend limited access to expertise or handle genuine ritual work. Several patterns may belong in one project.",
+    "whyItMatters": "Find where assistance removes a real constraint. Your selection, verification and understanding still determine whether the output helps.",
+    "practiceIds": [
+      "check-the-source",
+      "generate-varied-options",
+      "clear-a-small-block",
+      "transform-then-compare",
+      "seek-another-perspective",
+      "try-an-unfamiliar-framework",
+      "check-whether-it-is-ritual"
+    ],
+    "scenarioIds": [
+      "designer-converging-ideas",
+      "researcher-narrow-evidence"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "Putting the Patterns Together",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "6",
+        "section": "When You Need Quantity to Find Quality",
+        "anchor": "epub-25cc1c992663dc4a"
+      },
+      {
+        "chapter": "6",
+        "section": "When to Use AI",
+        "anchor": "epub-25cc1c992663dc4a",
+        "lineStart": 1461,
+        "lineEnd": 1478
+      },
+      {
+        "chapter": "6",
+        "section": "When the Work Is Ritual",
+        "anchor": "epub-25cc1c992663dc4a"
+      }
+    ]
+  },
+  {
+    "id": "effortful-learning",
+    "theme": "keep-your-capabilities",
+    "title": "Protect the effort that produces learning",
+    "kind": "practice",
+    "summary": "An answer that feels clear can conceal missing understanding. Productive struggle, retrieval and explanation build capability. Carefully directed tutoring can support that effort, while unstructured answer delivery can bypass it.",
+    "whyItMatters": "Decide whether today’s goal is completion or learning. When learning matters, keep the learner doing meaningful work and check what they can do without assistance.",
+    "practiceIds": [
+      "ask-for-a-tutor",
+      "retain-unaided-practice",
+      "strengthen-my-evaluation-knowledge",
+      "preserve-an-apprenticeship"
+    ],
+    "scenarioIds": [
+      "teacher-learning-evidence",
+      "junior-analyst-understanding",
+      "mentor-changing-junior-work"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "8",
+        "section": "The Universal Tutor",
+        "anchor": "epub-b523ecbf95039ecb"
+      },
+      {
+        "chapter": "8",
+        "section": "What Should We Teach?",
+        "anchor": "epub-b523ecbf95039ecb"
+      }
+    ]
+  },
+  {
+    "id": "meaningful-process",
+    "theme": "keep-your-capabilities",
+    "title": "Sometimes the process carries the value",
+    "kind": "practice",
+    "summary": "Some work develops your thinking or communicates personal effort, care and commitment. Outsourcing it can change its meaning even when the result is polished. Expectations vary by relationship and can change over time.",
+    "whyItMatters": "Identify what you want to contribute personally: the reasoning, the voice, the relationship or the work itself. Choose assistance around that purpose and revisit the boundary when circumstances change.",
+    "practiceIds": [
+      "clear-a-small-block",
+      "write-my-own-starting-view",
+      "preserve-personal-contribution",
+      "check-whether-it-is-ritual"
+    ],
+    "scenarioIds": [
+      "hr-internal-application",
+      "writer-position-before-prose"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "When Not to Use AI",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "Introduction",
+        "section": "How I Used AI to Write This Book",
+        "anchor": "epub-d5e840158979d994"
+      },
+      {
+        "chapter": "5",
+        "section": "The Bitter Lesson",
+        "anchor": "epub-9e0723fc6d67b448"
+      }
+    ]
+  },
+  {
+    "id": "human-advantages",
+    "theme": "keep-your-capabilities",
+    "title": "Develop four human advantages",
+    "kind": "practice",
+    "summary": "Learning systems can displace expertise at producing well-specified outputs: the Bitter Lesson. Mollick’s four human advantages emphasize deep knowledge for evaluation, wide knowledge for connections, taste for selection, and agency for action.",
+    "whyItMatters": "Keep studying your field, encountering unfamiliar approaches, forming considered preferences and trying things. Better tools increase the importance of knowing what is worth asking for and acting on.",
+    "practiceIds": [
+      "test-a-real-task",
+      "generate-varied-options",
+      "seek-another-perspective",
+      "retain-unaided-practice",
+      "write-my-own-starting-view",
+      "strengthen-my-evaluation-knowledge",
+      "try-an-unfamiliar-framework",
+      "train-my-taste"
+    ],
+    "scenarioIds": [
+      "designer-converging-ideas",
+      "writer-position-before-prose",
+      "junior-analyst-understanding"
+    ],
+    "source": {
+      "chapter": "5",
+      "section": "Your Four Advantages",
+      "anchor": "epub-9e0723fc6d67b448"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "5",
+        "section": "The Bitter Lesson",
+        "anchor": "epub-9e0723fc6d67b448"
+      },
+      {
+        "chapter": "8",
+        "section": "What Should We Teach?",
+        "anchor": "epub-b523ecbf95039ecb"
+      }
+    ]
+  },
+  {
+    "id": "workflow-bottlenecks",
+    "theme": "change-work",
+    "title": "Faster tasks can leave the workflow stuck",
+    "kind": "practice",
+    "summary": "In O-Ring automation, a weak step can limit the whole chain and automation can move the bottleneck. Organizations also contain undocumented processes and ambiguous decisions, captured by the Garbage Can model.",
+    "whyItMatters": "Follow the work through its handoffs. More or faster output at one step may create a queue elsewhere instead of improving the final outcome.",
+    "practiceIds": [
+      "follow-the-workflow",
+      "check-whether-it-is-ritual"
+    ],
+    "scenarioIds": [
+      "operations-shifted-queue"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "O-Rings, Garbage Cans, and Dissolving Walls",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "organizational-adoption",
+    "theme": "change-work",
+    "title": "Connect leadership, discovery and implementation",
+    "kind": "practice",
+    "summary": "Leadership sets a credible direction; the Crowd discovers useful workflows; the Lab develops and spreads them. Fear of punishment or lost jobs can keep productive experimentation hidden, creating the Secret Cyborg problem.",
+    "whyItMatters": "Access and training alone may achieve little. People need permission to explore, reasons to share and a route from a useful discovery to a working organizational change.",
+    "practiceIds": [
+      "make-sharing-worthwhile"
+    ],
+    "scenarioIds": [
+      "manager-sharing-discoveries"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "Reinvention",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "worker-agency",
+    "theme": "change-work",
+    "title": "Keep people able to shape the work",
+    "kind": "practice",
+    "summary": "AI can expand workers’ capabilities or turn them into attendants of a machine-controlled process: the reverse centaur. More capacity can also intensify work and blur stopping points. These outcomes depend partly on organizational choices.",
+    "whyItMatters": "Ask who chooses the goal, controls the pace and benefits from a saving. Productivity gains alone do not establish better work.",
+    "practiceIds": [
+      "make-sharing-worthwhile",
+      "bound-my-agent-work"
+    ],
+    "scenarioIds": [
+      "manager-sharing-discoveries",
+      "operations-shifted-queue",
+      "lead-more-agents-more-work"
+    ],
+    "source": {
+      "chapter": "7",
+      "section": "Reinvention",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "4",
+        "section": "Three Ways to Work with AI",
+        "anchor": "epub-3986ef8059c8abf7"
+      }
+    ]
+  },
+  {
+    "id": "expertise-pipeline",
+    "theme": "change-work",
+    "title": "Maintain a path from novice to expert",
+    "kind": "practice",
+    "summary": "Removing junior tasks can also remove the experiences that create future experts. Meaningful challenge, exposure to the wider system and trusted relationships with experienced practitioners remain important to developing skill.",
+    "whyItMatters": "Redesign learning opportunities as tasks change. Strong current output does not show that a team is building the expertise it will need later.",
+    "practiceIds": [
+      "ask-for-a-tutor",
+      "preserve-an-apprenticeship"
+    ],
+    "scenarioIds": [
+      "teacher-learning-evidence",
+      "mentor-changing-junior-work"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "What Should We Teach?",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "7",
+        "section": "Will We All Lose Our Jobs?",
+        "anchor": "epub-6e98c27ae7374e54"
+      }
+    ]
+  },
+  {
+    "id": "jobs-and-reorganization",
+    "theme": "change-work",
+    "title": "Tasks, jobs and organizational change",
+    "kind": "context",
+    "summary": "Jobs contain bundles of tasks, but agentic workflows may change several tasks and role boundaries together. Reinvention, more radical reorganization and replacement are different possibilities. The balance of job loss and new work remains uncertain.",
+    "whyItMatters": "Avoid reading a task test as a forecast for an occupation. Employment outcomes also depend on investment, institutional choices, demand and how work is reorganized.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "7",
+      "section": "Will We All Lose Our Jobs?",
+      "anchor": "epub-6e98c27ae7374e54"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "7",
+        "section": "Revolution",
+        "anchor": "epub-6e98c27ae7374e54"
+      },
+      {
+        "chapter": "7",
+        "section": "Replacement",
+        "anchor": "epub-6e98c27ae7374e54"
+      }
+    ]
+  },
+  {
+    "id": "ai-influence",
+    "theme": "wider-effects",
+    "title": "Useful advice can also influence you",
+    "kind": "practice",
+    "summary": "Personalized dialogue can change beliefs through apparently relevant information. The same capability can support understanding, sell a product or promote false claims. An assistant’s helpful manner does not establish whose interests it serves.",
+    "whyItMatters": "Separate persuasive presentation from evidence and purpose. Notice which information, preferences and incentives are shaping a recommendation.",
+    "practiceIds": [
+      "request-specific-critique",
+      "inspect-a-persuasive-recommendation",
+      "confirm-beyond-the-recording"
+    ],
+    "scenarioIds": [
+      "buyer-friendly-adviser",
+      "editor-unverified-recording"
+    ],
+    "source": {
+      "chapter": "9",
+      "section": "Changing Minds",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "synthetic-evidence",
+    "theme": "wider-effects",
+    "title": "Convincing media can weaken trust",
+    "kind": "practice",
+    "summary": "Synthetic voices, images and video can impersonate people. Their availability can also help people dismiss genuine evidence, the liar’s dividend, and contribute to reality apathy when checking feels too difficult.",
+    "whyItMatters": "Treat credibility as something to establish through sources and independent confirmation. Neither a convincing recording nor a blanket claim that everything is fake settles the matter.",
+    "practiceIds": [
+      "confirm-beyond-the-recording"
+    ],
+    "scenarioIds": [
+      "editor-unverified-recording"
+    ],
+    "source": {
+      "chapter": "9",
+      "section": "Changing Minds",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "book",
+    "confidence": "high"
+  },
+  {
+    "id": "ai-relationships",
+    "theme": "wider-effects",
+    "title": "Feeling heard has benefits and risks",
+    "kind": "context",
+    "summary": "AI conversation can provide useful advice and short-term relief from loneliness. Intense use may also displace human contact or reduce personal agency. The book emphasizes limited evidence and unresolved longer-term effects.",
+    "whyItMatters": "A satisfying interaction and a beneficial relationship are different questions. Outcomes depend on use, alternatives and product incentives; neither universal reassurance nor universal harm is established.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "9",
+      "section": "Friends and Advisers",
+      "anchor": "epub-9cc6226c2a6cde4b"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "9",
+        "section": "The Great Experiment",
+        "anchor": "epub-9cc6226c2a6cde4b"
+      }
+    ]
+  },
+  {
+    "id": "alignment-and-power",
+    "theme": "wider-effects",
+    "title": "Capability, alignment and power are different",
+    "kind": "context",
+    "summary": "A capable model is not necessarily pursuing acceptable goals. Alignment remains incomplete, and choices by companies, governments and users shape access, behavior and who benefits. Greater capability can increase both usefulness and potential harm.",
+    "whyItMatters": "Keep performance claims separate from judgments about acceptable behavior and control. Personal task experiments cannot settle the governance of systems with wider consequences.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "10",
+      "section": "The Hard Problems: Alignment and onsciousness",
+      "anchor": "epub-cfff2971594a3d80"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "10",
+        "section": "Who Controls AI",
+        "anchor": "epub-cfff2971594a3d80"
+      }
+    ]
+  },
+  {
+    "id": "uncertain-ai-minds",
+    "theme": "wider-effects",
+    "title": "The nature of AI remains unsettled",
+    "kind": "context",
+    "summary": "Simple descriptions of next-token prediction do not fully explain model behavior. Planning, internal representations and apparent self-reflection raise questions about understanding and consciousness. Neither compelling self-description nor a familiar metaphor resolves those questions.",
+    "whyItMatters": "Use practical mental models without treating them as complete explanations. The book presents uncertainty about consciousness and moral status, rather than a settled answer.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "10",
+      "section": "Who Is on the Other End of the Line?",
+      "anchor": "epub-cfff2971594a3d80"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "10",
+        "section": "Who Controls AI",
+        "anchor": "epub-cfff2971594a3d80"
+      }
+    ]
+  },
+  {
+    "id": "multiple-futures",
+    "theme": "wider-effects",
+    "title": "Prepare without pretending to know the future",
+    "kind": "context",
+    "summary": "Mollick contrasts continued uneven improvement, the Escalator, with a speculative transition to general or superhuman intelligence, the Eschaton. Timing, feasibility and social outcomes remain uncertain; planning only for current capability is also a choice.",
+    "whyItMatters": "Leave room to revise assumptions and discuss institutional choices. These scenarios help examine possibilities, not assign a reliable deadline to a predicted future.",
+    "practiceIds": [],
+    "scenarioIds": [],
+    "source": {
+      "chapter": "11",
+      "section": "Scenario One: The Escalator",
+      "anchor": "epub-ef33f9fa902c2961"
+    },
+    "origin": "book",
+    "confidence": "high",
+    "additionalSources": [
+      {
+        "chapter": "11",
+        "section": "Scenario Two: The Eschaton",
+        "anchor": "epub-ef33f9fa902c2961"
+      }
+    ]
+  }
+]

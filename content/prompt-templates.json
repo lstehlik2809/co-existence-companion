@@ -1,0 +1,121 @@
+[
+  {
+    "id": "task-test",
+    "title": "Try one representative task",
+    "purpose": "Create evidence for a task on your own map.",
+    "variables": [
+      "taskName",
+      "goal",
+      "audience",
+      "approvedInputs",
+      "constraints",
+      "successCriteria",
+      "deliverable"
+    ],
+    "text": "I want to test your help with this task: {{taskName}}.\nThe purpose is {{goal}}, for {{audience}}.\nUse these permitted inputs: {{approvedInputs}}.\nRespect these constraints: {{constraints}}.\nReturn this deliverable: {{deliverable}}.\nI will evaluate it against these criteria: {{successCriteria}}.\nIdentify missing information and distinguish supported claims from assumptions. If the task needs tools you cannot use, say which part you cannot complete. Produce the work so I can evaluate it; a plan alone is insufficient.",
+    "conceptIds": [
+      "jagged-frontier",
+      "context-engineering"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Getting AI to Do Things",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  },
+  {
+    "id": "agent-brief",
+    "title": "Delegate with a clear assignment",
+    "purpose": "Define an agent assignment after checking that delegation is appropriate.",
+    "variables": [
+      "goal",
+      "context",
+      "allowedScope",
+      "limits",
+      "deliverables",
+      "completionChecks",
+      "checkpoints"
+    ],
+    "text": "Complete this assignment: {{goal}}.\nRelevant context: {{context}}.\nYou may work within: {{allowedScope}}.\nLeave these actions and decisions to me: {{limits}}.\nRequired deliverables: {{deliverables}}.\nEvaluate completion using: {{completionChecks}}.\nPause for my review at: {{checkpoints}}.\nExplain any material uncertainty or failed check. Do not report completion without the deliverables and the results of those checks.",
+    "conceptIds": [
+      "context-engineering",
+      "collaboration-modes",
+      "testable-feedback"
+    ],
+    "source": {
+      "chapter": "4",
+      "section": "Three Ways to Work with AI",
+      "anchor": "epub-3986ef8059c8abf7"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  },
+  {
+    "id": "critical-review",
+    "title": "Ask for a concrete challenge",
+    "purpose": "Get useful objections to an idea rather than general praise.",
+    "variables": [
+      "proposal",
+      "criteria",
+      "context"
+    ],
+    "text": "Review this proposal: {{proposal}}.\nThe context is {{context}} and the criteria are {{criteria}}.\nIdentify specific weaknesses, assumptions that need evidence, and circumstances in which the proposal could fail. Explain which claims you can assess from the information supplied and which you cannot. Suggest the most useful next check. Do not infer that the proposal is good because I wrote it.",
+    "conceptIds": [
+      "sycophancy",
+      "context-engineering"
+    ],
+    "source": {
+      "chapter": "3",
+      "section": "Putting It Together",
+      "anchor": "epub-8e5d383e8ea39273"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  },
+  {
+    "id": "guided-practice",
+    "title": "Learn with hints",
+    "purpose": "Keep the learner attempting the work.",
+    "variables": [
+      "skill",
+      "currentUnderstanding",
+      "practiceProblem"
+    ],
+    "text": "Help me learn {{skill}}. My present understanding is {{currentUnderstanding}}. Use this practice problem: {{practiceProblem}}.\nBegin by asking what I would try. Offer a small hint when needed and let me attempt the next step before giving more help. Ask me to explain my reasoning. Afterward, give me a different problem to attempt without your solution. If your explanation depends on facts you cannot verify, flag that limitation.",
+    "conceptIds": [
+      "effortful-learning",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "8",
+      "section": "The Universal Tutor",
+      "anchor": "epub-b523ecbf95039ecb"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  },
+  {
+    "id": "perspective-check",
+    "title": "Look from another perspective",
+    "purpose": "Find plausible objections without pretending simulated people are real participants.",
+    "variables": [
+      "proposal",
+      "relevantPerspectives",
+      "knownContext"
+    ],
+    "text": "Consider this proposal: {{proposal}}.\nKnown context: {{knownContext}}.\nUse these perspectives to identify different concerns: {{relevantPerspectives}}.\nFor each, list a plausible objection and the evidence needed to investigate it. Treat these as hypotheses for me to check with real people or sources. Do not present simulated reactions as observations or predict actual people’s choices with certainty.",
+    "conceptIds": [
+      "useful-patterns",
+      "human-advantages"
+    ],
+    "source": {
+      "chapter": "6",
+      "section": "When You Need a Different Perspective",
+      "anchor": "epub-25cc1c992663dc4a"
+    },
+    "origin": "site",
+    "confidence": "medium"
+  }
+]
